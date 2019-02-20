@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install git,tree and wget in this tasks
+    apt:
+      name: "{{ item }}"
+      state: present
+    with_items:
+     - git
+     - tree 
+     - wget
+    
