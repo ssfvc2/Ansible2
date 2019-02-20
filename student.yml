@@ -1,0 +1,12 @@
+---
+- studentdetails:
+  - name: arun
+    phno:  85954565
+    course: devops
+    address: hphb
+
+  - name: supriya
+    phno: 89565656
+    course: aws
+    address: KPHB
+
