@@ -11,6 +11,6 @@
     yum:
       name: "{{javaonRedhat}}"
       state: present  
-    when: ansible_os_family =="Redhat"
+    when: ansible_os_family =="RedHat"
 
     
