@@ -25,5 +25,11 @@
     src:  templates/tomuser.j2
     dest: /etc/tomcat7/tomcat-users.xml
   notify: restarttomcat
-  
+
+- name: deploy the maha java application(war) into all nodes
+  get_url:
+    url: https://s3.amazonaws.com/maha4iac/mahaLogin.war
+    dest: /var/lib/tomcat7/webapps/mahaLogin.war
+    force_basic_auth: yes
+  notify: restarttomcat
    
